@@ -25,7 +25,9 @@ const columns: ColumnsType<DataType> = [
         key: "name",
         render: (text, user) => (
             <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', gap: '15px' }}>
+                {/* @ts-ignore */}
                 <Image src={user?.avatar ?? 'https://tasteofasia.com.au/uploads/2/products/obap-roasted-seasoned-seaweed-5g8.jpg'} width={30} height={30} style={{ borderRadius: '50%', marginRight: '10px' }} />
+                {/* @ts-ignore */}
                 <span>{text} {user?.lastName}</span>
             </div>
                 ),
